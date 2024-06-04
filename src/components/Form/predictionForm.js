@@ -16,10 +16,12 @@ export default function PredictionForm({ onSubmit, initialValues, isLoading }) {
           spacing={2} 
           justifyContent="center" 
           sx={{
+
             padding: 3,
             background: 'linear-gradient(135deg, #333333 30%, #1a1a1a 100%)', // Gradient dark background
             borderRadius: '8px', // Optional: to give the form a slight rounded corners
             boxShadow: '0 4px 20px rgba(0,0,0,0.25)' // Optional: adds shadow for depth
+      
           }}
         >
           <Grid item xs={12} md={4}>
@@ -47,9 +49,13 @@ export default function PredictionForm({ onSubmit, initialValues, isLoading }) {
               SelectProps={{ native: true }}
             >
               <option value="">Select crop type</option>
-              <option value="red">wheat</option>
-              <option value="green">Maize</option>
-              <option value="blue">Rice</option>
+              <option value="red">Maize</option>
+              <option value="green">Wheat</option>
+              <option value="blue">Soyebeans</option>
+              <option value="blue">Sorghum</option>
+              <option value="blue">Loamy</option>
+              <option value="blue">Oats</option>
+              <option value="blue">Millet</option>
             </Field>
             <ErrorMessage name="cropType" component="div" sx={{ color: 'error.main', fontSize: '0.875rem' }} />
           </Grid>
